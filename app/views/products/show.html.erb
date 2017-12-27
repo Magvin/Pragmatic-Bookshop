@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong> title:</strong>
+  <strong>Title:</strong>
   <%= @product.title %>
 </p>
 
 <p>
   <strong>Description:</strong>
-  <%= @product.description %>
+  <%= strip_tags(@product.description) %>
 </p>
 
 <p>
