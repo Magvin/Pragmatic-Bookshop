@@ -54,14 +54,17 @@ div {
 }
 
 .field_with_errors {
-  padding: 2px;
-  background-color: red;
+  padding: 3px;
+  background-color: #af2a68;
   display: table;
+  color:white;
+  font-weight: bold;
+  
 }
 
 #error_explanation {
   width: 450px;
-  border: 2px solid red;
+  border: 2px solid #912256;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
@@ -74,7 +77,7 @@ div {
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0;
-    background-color: #c00;
+    background-color: #af2a68;
     color: #fff;
   }
 
