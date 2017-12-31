@@ -14,6 +14,8 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
     get products_url
     assert_response :success
+    assert_select "title", :maximum=> 1
+
   end
 
   test "should get new" do
@@ -47,6 +49,13 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   end
 
   # ...
+  test "can't delete product in cart" do
+    assert_difference('Product.count', 0) do
+      delete product_url(products(:two))
+    end
+
+    assert_redirected_to products_url
+  end
 
   test "should destroy product" do
     assert_difference('Product.count', -1) do

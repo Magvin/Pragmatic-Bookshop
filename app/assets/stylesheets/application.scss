@@ -23,7 +23,13 @@ body, body > p, body > ol, body > ul, body > td { margin:8px !important}
 	color: #282;
 	border-bottom: 2px solid #519b4c;
 	text-align: left;
-	font: small-caps 40px/40px "Times New Roman", serif;
+	font: small-caps 40px/40px "Verdana", serif;
+
+#time{
+	text-align: right;
+	color:white;
+	font-size: 15px;
+}
 }
 img{
 	position:absolute;
@@ -57,6 +63,7 @@ img{
   }
  }
 }
+
 }
 
 
@@ -72,4 +79,17 @@ img{
 	#banner.title{
 	display:none;
 }
+}
+.carts ul{
+	    list-style:decimal;
+}
+.carts h2{
+	color:#282;
+}
+.img_center{
+	text-align:center;
+}
+.pic_title img {
+	position: relative;
+    width: auto;
 }
